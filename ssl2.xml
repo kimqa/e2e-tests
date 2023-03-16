@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sanity Suite">
+    <parameter name="baseUrl" value="https://reqres.in/"/>
+    <parameter name="UserName" value="${uname}" />
+    <parameter name="UserPass" value="${pwd}" />
+    <test name="Sanity test">
+        <classes>
+            <class name="GameRunTest">
+                <methods>
+                    <include name="test1"/>
+                    <include name="gameRun"/>
+                    <include name="test2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

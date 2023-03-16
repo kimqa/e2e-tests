@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SanitySuite">
+    <parameter name="baseUrl" value="https://stage1.isitssl.wtf"/>
+    <parameter name="publicKey" value="7ac0e1b67514df96a1729fd32ec5682cd6ac6b63d677527a88304390cd48631c"/>
+    <parameter name="privateKey" value="bbXSZ3ypfmdTW4gZ2h+cEJomTRMn4/b1mDO3Btjr7QdYZ5zcxT+NVi9tPE78Pf3ZcswNKus0D/FMmw+UoLIEOTUp3D2OjRYPIMuMjmm6lps23Lv0XYgYEuUrAgMBAAEC"/>
+    <test name="SSL1">
+        <classes>
+            <class name="GameRunTest">
+                <methods>
+                    <include name="emailVerificationTest"/>
+                    <include name="emailVerificationTest2"/>
+
+                    <include name="createGiftsBatchDistribute"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
